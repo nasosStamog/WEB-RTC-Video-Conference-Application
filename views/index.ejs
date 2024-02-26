@@ -1,0 +1,82 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Home Page</title>
+</head>
+<body class="main-index">
+    
+    <h1 id="welcome-message">Welcome to WebRTC Video Call App</h1>
+    <div class="main-content">
+    <div class="steps">
+        <h3>Step 1:</h3>
+        <form class="usernameForm">
+            <label for="username">Enter your username:</label>
+            <input type="text" id="username" required>
+        </form>
+        <h3>Step 2:</h3>
+        <h5>If you want to create a new room!</h5>
+        <button type="button" onclick="redirectToRoom()" class="button-3">Create Room</button>
+        <h5>If you want to join a room!</h5>
+        <div class="joinRoom">
+            <button type="button" onclick="joinRoomButt()" class="button-3">Join Room</button>
+            <input type="text" id="roomId" placeholder="Enter Room ID" style="display: none;">
+            <button type="button" id="joinRoomButton" class="button-3" onclick="redirectToSpecificRoom()" style="display: none;" >Join</button>
+        </div>      
+    </div>
+    </div>
+    <script>
+        function redirectToRoom() {
+            const username = document.getElementById('username').value;
+            const roomId = generateRandomRoomId()
+            if (username) {
+            // Redirect to the room page with the username as a query parameter
+                window.location.href = `/${roomId}?username=${encodeURIComponent(username)}`;
+            } else {
+                alert('Please enter a username.');
+            }
+            // Redirect to the room page with the username as a query parameter
+            
+        }
+
+        function redirectToSpecificRoom() {
+            const username = document.getElementById('username').value;
+            const roomId = document.getElementById('roomId').value;
+            if (username) {
+            // Redirect to the room page with the username as a query parameter
+                if (roomId) {
+                // Redirect to the room page with the username as a query parameter
+                    window.location.href = `/${roomId}?username=${encodeURIComponent(username)}`;
+                } else {
+                    alert('Please enter the room');
+                }
+            } else {
+                alert('Please enter a username.');
+            }
+            
+        }
+
+        function generateRandomRoomId() {
+            return Math.random().toString(36).substring(4);
+        }
+
+        function joinRoomButt() {
+            const roomCodeInput = document.getElementById('roomId');
+            const joinRoomButton = document.getElementById('joinRoomButton');
+
+            if (roomCodeInput.style.display === 'none') {
+                roomCodeInput.style.display = 'inline';
+                joinRoomButton.style.display = 'inline';
+            } else {
+                roomCodeInput.style.display = 'none';
+                joinRoomButton.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
