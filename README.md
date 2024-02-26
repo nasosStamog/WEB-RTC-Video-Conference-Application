@@ -35,10 +35,14 @@ Assignement for the class "Multimedia Technology" at Athens University of Econom
 
 Αν έχετε κωδικό πατήστε το κουμπί **Join Room** και εισάγετε τον κωδικό δωματίου όπως παρακάτω.
 
+![Picture2](https://github.com/nasosStamog/WEB-RTC-Video-Conference-Application/assets/92870089/72dabfb4-ce95-4db4-874c-b0475fabc1af)
+
 
 Έπειτα πατήστε το κουμπί **Join** και συνδεθήκατε!
 
 Βασικές Λειτουργίες Εφαρμογής
+
+![Picture4](https://github.com/nasosStamog/WEB-RTC-Video-Conference-Application/assets/92870089/345cbdec-f9f1-4bd6-b61b-3766ad2dd390)
 
 **Mute:** Σίγαση του μικροφώνου
 
