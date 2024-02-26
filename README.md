@@ -1,79 +1,77 @@
-Assignement for the class "Multimedia Technology" at Athens University of Economics and Business
-
 **WEB RTC Video Conference Application**
 
-**Αθανάσιος Σταμογιαννόπουλος 3200185**
+**Athanassios Stamogiannopoulos 3200185**
 
-**Δημήτριος Ανδριτσάνος 3200**
+**Dimitrios Andritsanos 3200**
 
-Οδηγίες Εγκατάστασης
+Installation instructions
 
-1. Εγκαθιστούμε το **Node.js** για την λειτουργία του server. 
+1. We install **Node.js** for the server operation.
 
-Για περισσότερες πληροφορίες και  εγκατάσταση:  <https://nodejs.org/en>
+For more information and installation: <https://nodejs.org/en>
 
-2. Ανοίγουμε τον φάκελο που περιέχει το app και εκτελούμε την παρακάτω εντολή στο τερματικό:
+2. Open the folder containing the app and execute the following command in the terminal:
 
 ***npm install***
 
-3. Ξεκινάμε τον server τρέχοντας την παρακάτω εντολή και πάλι στο τερματικό:
+3. We start the server by running the following command again in the terminal:
 
 ***node server.js***
 
-4. Ανοίγουμε έναν browser της επιλογής μας και επισκεπτόμαστε το εξής address:
+4. We open a browser of our choice and visit the following address:
 
 [***http://127.0.0.1:3000/***](http://127.0.0.1:3000/)
 
-5. Είμαστε έτοιμοι! Καλή διασκέδαση!
+5. We are ready! Have fun!
 
-Οδηγίες Χρήσης
+Instructions for use
 
-Μόλις επισκεφτείτε την αρχική σελίδα πρέπει να βλέπετε την παρακάτω οθόνη:
+Once you visit the home page you should see the following screen:
 
 ![Picture3](https://github.com/nasosStamog/WEB-RTC-Video-Conference-Application/assets/92870089/4f9a3302-b084-4049-aae8-4f1929fa0b72)
-Αρχικά εισάγετε **username**. Στην συνέχεια αν δεν έχετε κάποιον κωδικό δωματίου πατήστε **Create Room** και το app θα σας δημιουργήσει ένα δικό σας δωμάτιο με μοναδικό κωδικό. 
+First enter **username**. Then if you don't have a room code press **Create Room** and the app will create your own room with a unique code.
 
-Αν έχετε κωδικό πατήστε το κουμπί **Join Room** και εισάγετε τον κωδικό δωματίου όπως παρακάτω.
+If you have a code press the **Join Room** button and enter the room code as below.
 
 ![Picture2](https://github.com/nasosStamog/WEB-RTC-Video-Conference-Application/assets/92870089/72dabfb4-ce95-4db4-874c-b0475fabc1af)
 
 
-Έπειτα πατήστε το κουμπί **Join** και συνδεθήκατε!
+Then press the **Join** button and you are connected!
 
-Βασικές Λειτουργίες Εφαρμογής
+Basic Application Functions
 
 ![Picture4](https://github.com/nasosStamog/WEB-RTC-Video-Conference-Application/assets/92870089/345cbdec-f9f1-4bd6-b61b-3766ad2dd390)
 
-**Mute:** Σίγαση του μικροφώνου
+**Mute:** Mute the microphone
 
-**Stop Video:** Σταμάτημα εικόνας βίντεο
+**Stop Video:** Stop video image
 
-**Share Screen:** Κοινή χρήση της οθόνης του υπολογιστή με τον άλλο χρήστη
+**Share Screen:** Share the computer screen with the other user
 
-**Participants:** Προβολή ονομάτων συμμετεχόντων στην κλήση
+**Participants:** Display names of participants in the call
 
-**Copy RoomID:** Αντιγραφή μοναδικού κωδικού δωματίου 
+**Copy RoomID:** Copy unique room code
 
-**Chat Enabled/Disabled:** Εναλλαγή μεταξύ ανοιχτής και κλειστής λειτουργίας του chat
+**Chat Enabled/Disabled:** Toggle between open and closed chat mode
 
-**Leave Meeting:** Έξοδος από το δωμάτιο
+**Leave Meeting:** Exit the room
 
-**Σημαντικές Πληροφορίες**
+**Important information**
 
-- **Δεν μπορούν** να συνδεθούν παραπάνω από 2 άτομα στο ίδιο δωμάτιο.
-- Η εφαρμογή έχει δοκιμαστεί και λειτουργεί σε Chrome,Opera,Mozilla.
+- **No more than 2 people can connect in the same room.
+- The application has been tested and works on Chrome, Opera, Mozilla.
 
-**Συνεισφορά Μελών**
+**Member Contribution**
 
-Σταμογιαννόπουλος Αθανάσιος: Ανέλαβε την αρχική έρευνα για βιβλιοθήκες που θα χρησιμοποιηθούν, την βάση της εφαρμογής και το styling της αρχικής σελίδας. Έφτιαξε λειτουργίες όπως share screen, participants List και chat enable/disable. Επίσης προσάρμοσε τη βασική λειτουργία της εφαρμογής και των κουμπιών.
+Stamogiannopoulos Athanassios: Undertook the initial research for libraries to be used, the basis of the application and the styling of the home page. Made functions like share screen, participants List and chat enable/disable. Also adjusted the basic functionality of the app and buttons.
 
-Ανδριτσάνος Δημήτριος: Ανέλαβε την δημιουργία της αρχικής σελίδας και την δημιουργία και πέρασμα παραμέτρων στο δωμάτιο όπως username και room ID. Δημιούργησε επίσης το custom url που έχει κάθε δωμάτιο. Ανέλαβε επίσης το styling της σελίδας του δωματίου αλλά και το κουμπί copy Room ID. Έκανε σημαντικές διορθώσεις στην λειτουργία της εφαρμογής  και διόρθωσε σημαντικά bugs.
+Andritsanos Dimitrios: He undertook the creation of the home page and the creation and passing of parameters to the room such as username and room ID. Also created the custom url that each room has. He also took over the styling of the room page and the copy Room ID button. He made important corrections to the operation of the application and fixed important bugs.
 
-**Λογισμικό που αναπτύχθηκε**
+**Developed Software**
 
-Δημιουργήθηκε ένα λογισμικό το οποίο είναι ικανό να δημιουργεί δωμάτια έτσι ώστε ένας χρήστης να μπορεί να συνομιλήσει (βίντεο και ήχος) με έναν άλλον σε απομακρυσμένη τοποθεσία (remote). Κατά την διάρκεια της κλήσης ο χρήσης μπορεί να απενεργοποιήσει την κάμερα και το μικρόφωνο του. Υπάρχει δυνατότητα να κοινοποιήσει την οθόνη του καθένας από τους χρήστες. Επιπλέον επιλογές που δίνονται στους χρήστες του λογισμικού είναι η προβολή των ενεργών χρηστών στην κλήση η απενεργοποίηση του τσατ αλλά και η αποχώρηση από την κλήση.
+A software was created which is capable of creating rooms so that one user can chat (video and audio) with another in a remote location. During the call the user can turn off his camera and microphone. It is possible to share the screen of each of the users. Additional options given to the users of the software are to view the active users in the call, to disable the chat and also to leave the call.
 
-**Λογισμικό που χρησιμοποιήθηκε**
+**Software Used**
 
 \- <https://peerjs.com/>
 
@@ -85,11 +83,11 @@ Assignement for the class "Multimedia Technology" at Athens University of Econom
 
 \- <https://www.npmjs.com/package/uuid>
 
-Browser:  
+Browser:
 
 - Google Chrome
 
-**Πηγές πληροφόρησης**
+**Sources of information**
 
 \- <http://www.webrtc.org/>
 
@@ -97,8 +95,8 @@ Browser:
 
 \- <https://webrtc.ventures/2018/07/tutorial-build-video-conference-application-webrtc-2/>
 
-**Προβλήματα που εμφανίστηκαν**
+**Problems Encountered**
 
-- Υπήρξε μεγάλη προσπάθεια στο να προστεθούν περισσότερα από 2 άτομα στην κλήση όμως με τις παραπάνω βιβλιοθήκες δεν βρέθηκε τρόπος επίλυσης
-- Υπήρξε θέμα με την σύνδεση των χρηστών στην βασική έκδοση της εφαρμογής το οποίο επιλύθηκε χρησιμοποιώντας έτοιμο ICE server για την σύνδεση.
-- Υπήρξαν bugs στο share screen που δεν επέτρεπαν την σωστή χρήση του αλλά και στο leave meeting που μόλις αποχωρούσε ένας χρήστης η εικόνα του δεν «έφευγε» από το δωμάτιο άλλα παρέμενε κολλημένη. Και τα 2 με πολλές ώρες debugging αλλά και με κατάλληλες αλλαγές διορθώθηκαν. 
+- There was a lot of effort to add more than 2 people to the call but with the above libraries no solution was found
+- There was an issue with user login in the basic version of the application which was resolved by using ready ICE server for login.
+- There were bugs in the share screen that did not allow its correct use and also in the leave meeting where as soon as a user left his image did not "leave" the room but remained stuck. Both with many hours of debugging but also with appropriate changes were fixed.
